@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//media/maplekiyo/**)",
+      "Read(//mnt/**)",
+      "Bash(lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT,LABEL)",
+      "Bash(pip list *)",
+      "Bash(pip3 list *)",
+      "Bash(pip3 --version)",
+      "Bash(ntfs-3g --version)",
+      "Bash(python3 -m pip --version)",
+      "Bash(dpkg -l)",
+      "Bash(chmod +x /home/maplekiyo/projects/icloud-migration/migrate.sh)",
+      "Bash(sudo *)"
+    ]
+  }
+}
