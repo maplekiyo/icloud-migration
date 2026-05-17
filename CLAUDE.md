@@ -90,17 +90,17 @@ icloud-migration/
 ## Phase 3: Shell Orchestrator
 
 ### Tasks
-- [ ] Load `APPLE_ID` / `ICLOUD_PASSWORD` from `.env` in `migrate.sh`
-- [ ] Replace `python3 download_drive.py` with `uv run icloud-drive`
-- [ ] Abort if USB free space < 10 GB
-- [ ] Mount USB if not already mounted
-- [ ] Print file counts after downloads; run `sync` and unmount
-- [ ] Review `migrate.sh`; dry-run test (no iCloud connection)
+- [X] Load `APPLE_ID` / `ICLOUD_PASSWORD` from `.env` in `migrate.sh`
+- [X] Replace `python3 download_drive.py` with `uv run icloud-drive`
+- [X] Abort if USB free space < 10 GB
+- [X] Mount USB if not already mounted
+- [X] Print file counts after downloads; run `sync` and unmount
+- [X] Review `migrate.sh`; dry-run test (no iCloud connection)
 
 ### Acceptance Criteria
-- [ ] Dry run reaches mount step without errors
-- [ ] Script aborts clearly when free space is too low
-- [ ] `trap` ensures unmount runs even on failure
+- [X] Dry run reaches mount step without errors
+- [X] Script aborts clearly when free space is too low
+- [X] `trap` ensures unmount runs even on failure
 
 ---
 

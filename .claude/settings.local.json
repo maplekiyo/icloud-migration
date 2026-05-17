@@ -11,7 +11,17 @@
       "Bash(python3 -m pip --version)",
       "Bash(dpkg -l)",
       "Bash(chmod +x /home/maplekiyo/projects/icloud-migration/migrate.sh)",
-      "Bash(sudo *)"
+      "Bash(sudo *)",
+      "Bash(uv sync *)",
+      "Bash(curl -LsSf https://astral.sh/uv/install.sh)",
+      "Bash(sh)",
+      "Bash(/home/maplekiyo/.local/bin/uv sync *)",
+      "Bash(/home/maplekiyo/.local/bin/uv run *)",
+      "Bash(git -C /home/maplekiyo/projects/icloud-migration status)",
+      "Bash(git -C /home/maplekiyo/projects/icloud-migration remote -v)",
+      "Bash(git -C /home/maplekiyo/projects/icloud-migration add pyproject.toml src/ tests/ uv.lock .gitignore)",
+      "Bash(git -C /home/maplekiyo/projects/icloud-migration commit -m ' *)",
+      "Bash(git *)"
     ]
   }
 }
