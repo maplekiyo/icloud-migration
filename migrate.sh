@@ -13,7 +13,7 @@ set -euo pipefail
 
 # --- config -----------------------------------------------------------------
 USB_DEVICE="${USB_DEVICE:-/dev/sdc1}"
-USB_MOUNT="${USB_MOUNT:-/mnt/usb_migration}"
+USB_MOUNT="${USB_MOUNT:-/media/maplekiyo/icloud}"
 PHOTOS_DIR="${PHOTOS_DIR:-${USB_MOUNT}/icloud_photos}"
 DRIVE_DIR="${DRIVE_DIR:-${USB_MOUNT}/icloud_drive}"
 MIN_FREE_GB="${MIN_FREE_GB:-10}"

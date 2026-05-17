@@ -101,8 +101,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--password", help="iCloud password (overrides .env)")
     parser.add_argument(
         "--dest",
-        default="/mnt/usb_migration/icloud_drive",
-        help="Destination directory (default: /mnt/usb_migration/icloud_drive)",
+        default="/media/maplekiyo/icloud/icloud_drive",
+        help="Destination directory (default: /media/maplekiyo/icloud/icloud_drive)",
     )
     args = parser.parse_args(argv)
 

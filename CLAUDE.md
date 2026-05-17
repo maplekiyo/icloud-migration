@@ -8,13 +8,13 @@ Migrate iCloud Photos, Videos, and Drive files to a local USB drive on Linux.
 |---|---|
 | OS | Ubuntu (Linux 5.15) |
 | Python | 3.10, `uv` |
-| USB | `/dev/sdc1` — 232.9 GB NTFS, mounted at `/mnt/usb_migration` |
+| USB | `/dev/sdc1` — 232.9 GB NTFS, mounted at `/media/maplekiyo/icloud` |
 | Apple ID | maplekiyo@yahoo.co.jp |
 
 ## Output Structure
 
 ```
-/media/maplekiyo/
+/media/maplekiyo/icloud/
 ├── icloud_photos/YYYY/MM/IMG_*.{jpg,heic,mov,mp4,...}
 └── icloud_drive/          # mirrors iCloud Drive folder tree
 ```
