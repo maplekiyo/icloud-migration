@@ -68,22 +68,22 @@ icloud-migration/
 ## Phase 2: Drive Download Logic
 
 ### Tasks
-- [ ] Refactor `drive.py` into `authenticate()`, `download_node()`, `main()`
-- [ ] Read credentials from `.env` via `python-dotenv`
-- [ ] Handle 2FA (`requires_2fa`) and 2SA (`requires_2sa`) flows
-- [ ] Skip files that already exist with non-zero size
-- [ ] Write unit tests:
-  - [ ] `test_download_node_skips_existing_file`
-  - [ ] `test_download_node_downloads_missing_file`
-  - [ ] `test_download_node_recurses_into_folder`
-  - [ ] `test_download_node_handles_folder_listing_error`
-- [ ] Review code; run `uv run pytest`
+- [X] Refactor `drive.py` into `authenticate()`, `download_node()`, `main()`
+- [X] Read credentials from `.env` via `python-dotenv`
+- [X] Handle 2FA (`requires_2fa`) and 2SA (`requires_2sa`) flows
+- [X] Skip files that already exist with non-zero size
+- [X] Write unit tests:
+  - [X] `test_download_node_skips_existing_file`
+  - [X] `test_download_node_downloads_missing_file`
+  - [X] `test_download_node_recurses_into_folder`
+  - [X] `test_download_node_handles_folder_listing_error`
+- [X] Review code; run `uv run pytest`
 
 ### Acceptance Criteria
-- [ ] All unit tests pass
-- [ ] Bad credentials raise a clear error (mocked)
-- [ ] Existing files are skipped
-- [ ] Folder listing errors log to stderr and don't abort the run
+- [X] All unit tests pass
+- [X] Bad credentials raise a clear error (mocked)
+- [X] Existing files are skipped
+- [X] Folder listing errors log to stderr and don't abort the run
 
 ---
 
