@@ -37,30 +37,31 @@ icloud-migration/
 
 ## Development Strategy
 
-1. Track tasks with `[ ]` / `[x]` in each phase below.
-2. All acceptance criteria must be `[x]` before starting the next phase.
+1. Track tasks with `[ ]` / `[X]` in each phase below.
+2. All acceptance criteria must be `[X]` before starting the next phase.
 3. Review and run tests after each task before marking it done.
 4. Every non-trivial function needs a unit test in `tests/`.
 5. Commit and push to GitHub after each phase completes.
 6. Execute each phase in YOLO mode (no confirmation prompts).
+7. **Update CLAUDE.md task checkboxes immediately** as each task and acceptance criterion is completed — edit `[ ]` → `[X]` in this file before moving on. Include the CLAUDE.md update in the phase's commit.
 
 ---
 
 ## Phase 1: Project Scaffold
 
 ### Tasks
-- [ ] Create `pyproject.toml` (`icloudpd` dep, `icloud-drive` entry point, `pytest` dev dep)
-- [ ] Create `src/icloud_migration/__init__.py`
-- [ ] Move `download_drive.py` → `src/icloud_migration/drive.py`
-- [ ] Create `tests/test_drive.py` with placeholder
-- [ ] Add `.gitignore` (`.env`, `.venv/`, `__pycache__/`, `*.pyc`)
-- [ ] Run `uv sync`; confirm structure matches layout above
+- [X] Create `pyproject.toml` (`icloudpd` dep, `icloud-drive` entry point, `pytest` dev dep)
+- [X] Create `src/icloud_migration/__init__.py`
+- [X] Move `download_drive.py` → `src/icloud_migration/drive.py` (created fresh — no prior file existed)
+- [X] Create `tests/test_drive.py` with placeholder
+- [X] Add `.gitignore` (`.env`, `.venv/`, `__pycache__/`, `*.pyc`)
+- [X] Run `uv sync`; confirm structure matches layout above
 
 ### Acceptance Criteria
-- [ ] `uv sync` succeeds
-- [ ] `uv run icloud-drive --help` prints usage
-- [ ] `uv run pytest tests/` exits 0
-- [ ] `.env` is in `.gitignore`
+- [X] `uv sync` succeeds
+- [X] `uv run icloud-drive --help` prints usage
+- [X] `uv run pytest tests/` exits 0
+- [X] `.env` is in `.gitignore`
 
 ---
 
